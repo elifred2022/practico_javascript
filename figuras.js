@@ -171,3 +171,23 @@ function CalcularAreaCirculo() {
     const areaCirculo2 = areaCirculo(value5);
                 
     alert(areaCirculo2); }
+
+//Reto triangulo isoseles
+
+
+//      ojo lo deje hasta aca por que n puede hacer el reto seguir investigando
+
+function verificarIsoscele() {
+    const input6 = document.getElementById("InputladoA");
+    const value6 = parseInt(input6.value);
+    const input7 = document.getElementById("InputladoB");
+    const value7 = parseInt(input7.value);
+    const input8 = document.getElementById("InputladoC");
+    const value8 = parseInt(input8.value);
+
+    var aviso = "Isoscele";
+
+    alert(aviso);
+
+    
+}
