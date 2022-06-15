@@ -177,17 +177,39 @@ function CalcularAreaCirculo() {
 
 //      ojo lo deje hasta aca por que n puede hacer el reto seguir investigando
 
-function verificarIsoscele() {
-    const input6 = document.getElementById("InputladoA");
-    const value6 = parseInt(input6.value);
-    const input7 = document.getElementById("InputladoB");
-    const value7 = parseInt(input7.value);
-    const input8 = document.getElementById("InputladoC");
-    const value8 = parseInt(input8.value);
 
-    var aviso = "Isoscele";
+function calcularAlturaTriangulo() {
 
-    alert(aviso);
-
+    const inputlado1 = document.getElementById("inputlado1");
     
-}
+    const valuelado1 = Number(inputlado1.value);
+    
+    const inputlado2 = document.getElementById("inputlado2");
+    
+    const valuelado2 = Number(inputlado2.value);
+    
+    const inputbase = document.getElementById("inputbase");
+    
+    const valuebase = Number(inputbase.value);
+        
+        if (valuelado1 === valuelado2 && valuelado1 != valuebase) {
+            alert("El triangulo es isósceles tiene un perímetro de ")} //+ perimetro + " una altura de " + altura + " y un area de " + area);}
+          
+            else{  alert("El triangulo no es isscele")} }
+    
+    //const altura = alturaTrianguloIsosceles(valuelado1, valuelado2, valuebase);
+    
+    //const perimetro = perimetroTriangulo(valuelado1, valuelado2, valuebase);
+    
+    //const area = areaTriangulo(altura, valuebase);
+    
+    //alert("El triangulo es isósceles tiene un perímetro de ")} //+ perimetro + " una altura de " + altura + " y un area de " + area);}
+          
+        //  else{
+    
+    //perimetro = perimetroTriangulo(valuelado1, valuelado2, valuebase);
+    
+    //const area = areaTriangulo(altura, valuebase);
+    
+   // alert("El triangulo no es isscele")} //tiene un perímetro de " + perimetro + " y un area de " + area);} }
+
