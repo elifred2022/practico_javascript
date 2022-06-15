@@ -175,19 +175,37 @@ function CalcularAreaCirculo() {
 //Reto triangulo isoseles
 
 
-//      ojo lo deje hasta aca por que n puede hacer el reto seguir investigando
 
-function verificarIsoscele() {
-    const input6 = document.getElementById("InputladoA");
-    const value6 = parseInt(input6.value);
-    const input7 = document.getElementById("InputladoB");
-    const value7 = parseInt(input7.value);
-    const input8 = document.getElementById("InputladoC");
-    const value8 = parseInt(input8.value);
+// codigo recomendado en los comentarios de platzi
 
-    var aviso = "Isoscele";
+functioncalcularAlturaTriangulo() {
 
-    alert(aviso);
+const inputlado1 = document.getElementById("InputTrianguloLado1");
 
+const valuelado1 = Number(inputlado1.value);
+
+const inputlado2 = document.getElementById("InputTrianguloLado2");
+
+const valuelado2 = Number(inputlado2.value);
+
+const inputbase = document.getElementById("InputTrianguloBase");
+
+const valuebase = Number(inputbase.value);
     
-}
+    if (valuelado1 == valuelado2 && valuelado1 !=valuebase ) {
+
+const altura = alturaTrianguloIsosceles(valuelado1,valuelado2,valuebase);
+
+const perimetro = perimetroTriangulo(valuelado1,valuelado2,valuebase);
+
+const area = areaTriangulo(altura,valuebase);
+
+alert("El triangulo es isósceles tiene un perímetro de " + perímetro + " una altura de " + altura + " y un area de " + area}
+      
+      else{
+
+perimetro = perimetroTriangulo(valuelado1,valuelado2,valuebase);
+
+const area = areaTriangulo(altura,valuebase);
+
+alert("El triangulo tiene un perímetro de " + perímetro + " y un area de " + area} }
