@@ -14,8 +14,8 @@
 
 
 function calcularPrecioConDescuento(Pricevalue, Discountvalue) {
-    const porcentajePrecioConDescuento = 100 - Discountvalue;
-    const precioConDescuento = (Discountvalue * porcentajePrecioConDescuento) / 100;
+    //const porcentajePrecioConDescuento = 100 - Discountvalue;
+    const precioConDescuento = Pricevalue * (100 - Discountvalue) / 100;
 
    return precioConDescuento;}
 
@@ -29,6 +29,8 @@ function onClickbutton() {
 
     const precioConDescuento = calcularPrecioConDescuento(Pricevalue, Discountvalue);
 
+    const ResultP = document.getElementById ("ResultP");
+    ResultP.innerText = "El precio con descuento es: $" + precioConDescuento; 
     }
 
     // seguir intentando mas enredao video 12
