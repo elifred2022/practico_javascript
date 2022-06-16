@@ -213,3 +213,4 @@ function calcularAlturaTriangulo() {
     
    // alert("El triangulo no es isscele")} //tiene un perímetro de " + perimetro + " y un area de " + area);} }
 
+
