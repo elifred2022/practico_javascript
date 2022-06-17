@@ -11,26 +11,54 @@
   // porcentajePrecioConDescuento,
    // precioConDescuento,});
 
+const coupons = [
+   "Barby",
+   "Naty",
+   "Mary",];
 
+  
 
-function calcularPrecioConDescuento(Pricevalue, Discountvalue) {
+function calcularPrecioConDescuento(Pricevalue, descuento) {
     //const porcentajePrecioConDescuento = 100 - Discountvalue;
-    const precioConDescuento = Pricevalue * (100 - Discountvalue) / 100;
+    const precioConDescuento = Pricevalue * (100 - descuento) / 100;
 
    return precioConDescuento;}
+
 
 
 function onClickbutton() {
     const inputPrice = document.getElementById("inputPrice");
     const Pricevalue = inputPrice.value;
 
-    const inputDiscount = document.getElementById("inputDiscount");
-    const Discountvalue = inputDiscount.value;
+    const inputCoupon = document.getElementById("inputCoupon");
+    const couponvalue = inputCoupon.value;
 
-    const precioConDescuento = calcularPrecioConDescuento(Pricevalue, Discountvalue);
+    let descuento;
+
+    
+    switch(couponvalue) {
+      case coupons[0]: //Barby "aca se evidencia cuando declaramos las constantes arriba empiezan desde el 0, 1 y 2, osea Barby es el 0"
+      descuento = 15;
+      break;
+      case coupons[1]: //Naty "Naty es el 1"
+      descuento = 30;
+      break;
+      case coupons[2]: //Mary "Mary es el 2"
+      descuento = 25;
+      break; }
+
+    
+    const precioConDescuento = calcularPrecioConDescuento(Pricevalue, descuento);
 
     const ResultP = document.getElementById ("ResultP");
     ResultP.innerText = "El precio con descuento es: $" + precioConDescuento; 
     }
 
-    // seguir intentando mas enredao video 12
+
+
+//if (couponvalue = 1){
+  // descuento = 50;
+// } else if (inputCoupon = 2){
+  // descuento = 25;
+// } else if (inputCoupon = 3){
+  // descuento = 15; }
