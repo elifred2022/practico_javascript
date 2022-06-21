@@ -81,19 +81,19 @@ console.groupEnd();
 // funciones para no usar variables determinadas
 
 //progamando los botones interactuar con el html
-// cuadrado
+// CUADRADO
 function calcularPerimetroCuadrado() {
     const input = document.getElementById("InputCuadrado");
     const value = input.value;
 
-    const perimetro = perimetroCuadrado(value) + "Cm";
+    const perimetro = perimetroCuadrado(value) + " Cm";
     alert(perimetro); }
 
 function calcularAreaCuadrado() {
     const input = document.getElementById("InputCuadrado");
     const value = input.value;
 
-    const area = areaCuadrado(value);
+    const area = areaCuadrado(value) + " Cm";
     alert(area);}
 
 //triangulo
@@ -113,7 +113,7 @@ function calcularPerimetroTriangulo() {
     const input3 = document.getElementById("InputTrianguloBase");
     const value3 = parseInt(input3.value);
    
-    const perimetroTriangulo2 = perimetroTriangulo(value1, value2, value3);
+    const perimetroTriangulo2 = perimetroTriangulo(value1, value2, value3) + " Cm";
     
     alert(perimetroTriangulo2); }
 
@@ -124,7 +124,7 @@ function calcularAreaTriangulo() {
     const input4 = document.getElementById("InputTrianguloAltura");
     const value4 = parseInt(input4.value);
     
-    const areaTriangulo2 = areaTriangulo(value4, value3);
+    const areaTriangulo2 = areaTriangulo(value4, value3) + " Cm";
         
     alert(areaTriangulo2); }
 
@@ -139,7 +139,7 @@ function CalcularDiametroCirculo() {
     const input5 = document.getElementById("Radio");
     const value5 = parseInt(input5.value);
         
-    const DiametroCirculo2 = diametroCirulo(value5);
+    const DiametroCirculo2 = diametroCirulo(value5) + " Cm";
         
     alert(DiametroCirculo2); }
 
@@ -154,7 +154,7 @@ function CalcularPerimetroCirculo() {
     const value5 = parseInt(input5.value);
 
 
-    const perimetroCirculo2 = perimetroCirculo(value5);
+    const perimetroCirculo2 = perimetroCirculo(value5) + " Cm";
                 
     alert(perimetroCirculo2); }
 
@@ -168,7 +168,7 @@ function CalcularAreaCirculo() {
     const value5 = parseInt(input5.value);
 
 
-    const areaCirculo2 = areaCirculo(value5);
+    const areaCirculo2 = areaCirculo(value5) + " Cm";
                 
     alert(areaCirculo2); }
 
