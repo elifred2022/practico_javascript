@@ -87,14 +87,14 @@ function calcularPerimetroCuadrado() {
     const value = input.value;
 
     const perimetro = perimetroCuadrado(value);
-    alert(perimetro + "Cm"); }
+    alert(perimetro)"Cm"; }
 
 function calcularAreaCuadrado() {
     const input = document.getElementById("InputCuadrado");
     const value = input.value;
 
     const area = areaCuadrado(value);
-    alert(area + "Cm");}
+    alert(area) "Cm";}
 
 //triangulo
 
